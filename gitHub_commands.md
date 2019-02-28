@@ -1,11 +1,11 @@
-###To find remote repo URL
+### To find remote repo URL
 `Git remote -v`
 
-###To search files in github
+### To search files in github
 Press 't' key
 
-###List Tags
+### List Tags
 Git tag -l 
 
-###Create branch from a tag
+### Create branch from a tag
 Git checkout -b <branch-name> tag
