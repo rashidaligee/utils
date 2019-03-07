@@ -1,0 +1,9 @@
+### Connect a postgres database
+`psql -d databaseName -U username`
+
+### List tables in database.
+
+`\dt`
+
+### describe schema of a table
+
