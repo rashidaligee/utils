@@ -3,3 +3,6 @@
 
 #### Find To 10 Files by Size
 `find /var/log -type f -exec du -Sh {} + | sort -rh | head -n 10`
+
+#### Find attached disks
+`- lsblk -ido KNAME,TYPE,SIZE,MODEL`
