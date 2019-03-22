@@ -1,0 +1,9 @@
+#### mysql install
+* yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+* yum install mysql-community-server
+* sudo systemctl enable mysqld
+* sudo systemctl start mysqld
+* grep 'temporary password' /var/log/mysqld.log
+*  mysql_secure_installation
+
+
