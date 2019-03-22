@@ -7,3 +7,5 @@
 *  mysql_secure_installation
 
 
+#### command to grant all privileges to root user.
+grant all privileges on *.* to 'root'@'%' with grant option;
