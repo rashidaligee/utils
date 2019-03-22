@@ -6,3 +6,10 @@
 
 #### Find attached disks
 `- lsblk -ido KNAME,TYPE,SIZE,MODEL`
+
+#### List packages in system
+`yum list`
+
+#### list repos
+`yum repolist`
+
