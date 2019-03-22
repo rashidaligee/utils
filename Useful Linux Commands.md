@@ -13,3 +13,6 @@
 #### list repos
 `yum repolist`
 
+#### Find current working directory of a process
+`lsof -p PROCESS_ID | grep cwd`
+
