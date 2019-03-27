@@ -16,3 +16,29 @@
 #### Find current working directory of a process
 `lsof -p PROCESS_ID | grep cwd`
 
+#### alternatives command
+`alternatives --verbose --display hive-conf`
+
+#### top 10 cpu consuming process
+`ps -e -o pcpu,pid,user,args|sort -k1 -nr|head -10`
+
+#### To list top 10 Memory consuming processes with user
+`ps -e -o pmem,pid,user,args|sort -k1 -nr|head -10`
+
+#### To list top 10 CPU usage processes with user
+`ps -e -o pcpu,pid,user,args|sort -k1 -nr|head -10`
+#### Find out top 10 CPU consuming process
+`ps -auxf|sort -nr -k3|head -10`
+#### To list top 10 Memory consuming processes with user
+`ps -e -o pmem,pid,user,args|sort -k1 -nr|head -10`
+#### Find out the top 10 memory consuming process
+`ps -auxf|sort -nr -k4|head -10`
+#### Find out every process running under a user
+`ps -U user-name -u user-name u`
+`ps -e -o pid,user,args|grep $username`
+
+#### all processes under
+/proc/<pid>
+
+
+  
