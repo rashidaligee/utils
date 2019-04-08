@@ -13,6 +13,12 @@
 #### list repos
 `yum repolist`
 
+#### find packages
+`rpm -qa | grep <package>`
+
+#### find installed package files
+`rpm -ql <package complete name>`
+
 #### Find current working directory of a process
 `lsof -p PROCESS_ID | grep cwd`
 
