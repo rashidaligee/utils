@@ -1,5 +1,5 @@
 ### Connect a postgres database
-`psql -d databaseName -U username`
+`psql -d databaseName -U username -h <HOSTNAME>`
 
 
 ### List database
@@ -18,3 +18,8 @@
 
 ### quit
 \q
+
+### Create database and user
+CREATE DATABASE [DATABASE];
+CREATE USER [USER] WITH PASSWORD '[PASSWORD]';
+GRANT ALL PRIVILEGES ON DATABASE [DATABASE] TO [USER];
