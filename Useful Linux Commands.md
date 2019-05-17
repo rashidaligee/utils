@@ -46,5 +46,11 @@
 #### all processes under
 /proc/<pid>
 
+#### find all threads started by a process
+ps -T -p <PID>
+
+top -H -p <PID>
+  
+  
 
   
