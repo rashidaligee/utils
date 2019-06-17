@@ -17,3 +17,6 @@ vi file1 file2
 
 #### To see list of current buffers
 :ls
+
+#### Delete empty lines
+:g/^$/d
