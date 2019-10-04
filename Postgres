@@ -1,3 +1,6 @@
+### Find the version of postgres
+postgres -V
+
 ### Connect a postgres database
 `psql -d databaseName -U username -h <HOSTNAME>`
 
