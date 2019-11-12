@@ -8,4 +8,4 @@
 
 
 #### command to grant all privileges to root user.
-grant all privileges on *.* to 'root'@'%' with grant option;
+grant all privileges on *.* to 'root'@'%' identitified by 'password' with grant option;
