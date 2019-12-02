@@ -1,0 +1,14 @@
+=== find all limits for logged in user=====
+ulimit -a
+
+===== find hard (H) or soft (S) limit =====
+ulimit -Hn
+ulimit -Sn
+
+==== Find ulimit through process id =====
+cat /proc/<PID>/limits
+
+======System wide limits are set at =====
+/etc/sysctl.conf
+
+
