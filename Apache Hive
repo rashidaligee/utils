@@ -2,3 +2,17 @@ MultiUser Access to Hive
 If you are only making a JDBC connection as a privileged user from a single blessed machine, then direct proxy access is the simpler approach. You can just pass the user you need to impersonate in the JDBC URL by using the hive.server2.proxy.user=<user> parameter.
 
 DelegationUID option doesn't work with JDBC driver with or without Knox. hive.server2.proxy.user option does work without knox. hive.server2.proxy.user has no impact when connection is made through knox.
+
+
+
+Property to Print summary of iO
+set hive.tez.exec.print.summary=true
+
+set hive.log.explain.output=true
+set hive.explain.user=true
+set hive.query.results.cache.enabled=false;
+
+#Parameters decides if query will run on hiveserver2 or on daemons.
+
+hive.fetch.task.conversion.threshold
+hive.fetch.task.conversion
