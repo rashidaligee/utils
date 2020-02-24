@@ -17,3 +17,8 @@ set hive.query.results.cache.enabled=false;
 hive.fetch.task.conversion.threshold
 hive.fetch.task.conversion
 hive.fetch.task.aggr
+
+
+
+# Hive LLAP status
+hive --service llapstatus --name llap0
