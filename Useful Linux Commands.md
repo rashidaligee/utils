@@ -51,6 +51,8 @@ ps -T -p <PID>
 
 top -H -p <PID>
   
-  
+### find unique established connection  
+
+ grep ESTABLISHED netstat_rm.txt  | awk '{print $5}' | awk -F":" '{print $1}' |sort | uniq -c
 
   
