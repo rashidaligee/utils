@@ -55,4 +55,6 @@ top -H -p <PID>
 
  grep ESTABLISHED netstat_rm.txt  | awk '{print $5}' | awk -F":" '{print $1}' |sort | uniq -c
 
+### To untar in a new folder
+tar -xvf file.tar.gz -C newlyCreatedFolder
   
