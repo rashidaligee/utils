@@ -58,3 +58,5 @@ top -H -p <PID>
 ### To untar in a new folder
 tar -xvf file.tar.gz -C newlyCreatedFolder
   
+### remove space from file names
+for oldname in *; do newname=`echo $oldname | sed -e 's/ //g'`; mv "$oldname" "$newname";done
