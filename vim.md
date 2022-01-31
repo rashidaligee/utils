@@ -10,10 +10,13 @@ vi file1 file2
 
 #### see the list of open files
 :args
+:ls
+
 
 #### move between multiple files
 :n
 :prev
+:buffer <numberOfFile>
 
 #### To see list of current buffers
 :ls
