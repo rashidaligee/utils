@@ -20,3 +20,9 @@ vi file1 file2
 
 #### Delete empty lines
 :g/^$/d
+
+#### moving cursor
+Ctrl-u Moves cursor & screen up ½ page
+Ctrl-d Moves cursor & screen down ½ page
+Ctrl-b Moves screen up one page, cursor to last line
+Ctrl-f Moves screen down one page, cursor to first line
