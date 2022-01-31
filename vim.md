@@ -17,6 +17,7 @@ vi file1 file2
 :n
 :prev
 :buffer <numberOfFile>
+:b <numberOfFile>  
 
 #### To see list of current buffers
 :ls
