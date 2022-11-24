@@ -1,0 +1,11 @@
+ldapsearch -x -H ldap://server:389 -D "test1@SUPPORT.COM" -w hadoop12345! -b "OU=$OKTA_USERNAME,OU=dept,OU=compnay,dc=support, dc=com"|grep 'cn:'|grep "$CLUSTER_NAME"|wc -l
+
+ 
+ldapsearch -x -H ldap://server:389 -D "test1@SUPPORT.COM" -w hadoop12345! -b "OU=$OKTA_USERNAME,OU=dept,OU=compnay,dc=support, dc=com" |
+grep -w "dn: OU="$OKTA_USERNAME",OU=squadron"
+
+ldapmodify -x -H ldap://server.com:389 -D "test1@SUPPORT.COM" -w hadoop12345! -f /tmp/ou.ldif
+
+ldapsearch -x -H ldap://server.com:389 -D "test1@SUPPORT.COM" -w hadoop12345! -b "OU=$OKTA_USERNAME,OU=squadron,OU=hortonworks,dc=support, dc=com"|grep 'cn:'|grep "$CLUSTER_NAME"|cut -d':' -f2|tr -d ' ' > /tmp/list_princs
+
+ldapdelete -x -H ldap://sme-2012-ad.support.com:389 -D "test1@support.com" -w hadoop12345! "cn=$princ,ou=$OKTA_USERNAME,ou=squadron,ou=hortonworks,dc=support,dc=com"
